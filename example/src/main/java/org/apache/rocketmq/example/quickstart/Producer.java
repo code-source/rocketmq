@@ -31,7 +31,7 @@ public class Producer {
         /*
          * Instantiate with a producer group name.
          */
-        DefaultMQProducer producer = new DefaultMQProducer("please_rename_unique_group_name");
+        DefaultMQProducer producer = new DefaultMQProducer("si-shi-da-dao");
 
         /*
          * Specify name server addresses.
@@ -44,7 +44,7 @@ public class Producer {
          * }
          * </pre>
          */
-
+        producer.setNamesrvAddr("127.0.0.1:9876");//如果不设置貌似回去阿里的内部URL拉取相关地址
         /*
          * Launch the instance.
          */
